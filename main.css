@@ -1,0 +1,388 @@
+html {box-sizing:border-box;}
+*, *::before, *::after {box-sizing: inherit;}
+
+body {
+    font-family: sans-serif;
+}
+ul {
+    list-style: none;
+    margin: 0;
+}
+#container {
+    width:1400px;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+}
+.topleft {
+    display: flex;
+    height: 100px;
+    width: 600px;
+
+}
+.logo {
+    color: rgb(244,88,0);
+    font-family: serif;
+    font-size: 33pt;
+    font-weight: 100;
+    margin-top: 20px;
+}
+.searchbar {
+    width: 500px;
+    height: 50px;
+    border-radius: 50px;
+    border: 2px solid rgb(206,206,206);
+    margin-left: 20px;
+    background: rgb(241,241,241);
+}
+#searchicon {
+    position: relative;
+    top: 35px;
+    z-index: 1;
+    left: 483px;
+    font-size: 17pt;
+}
+#searchex {
+    position: relative;
+    z-index: 1;
+    top: 35px;
+    left:415px;
+    font-size: 17pt;
+}
+.searchbar:focus {
+    border-color: black;
+    transition-duration: 1s;
+}
+.searchbar::placeholder {
+    padding: 10px;
+    color: rgb(50,50,50);
+    font-size: 12pt;
+    align-items: center;
+}
+.topright {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: -100px;
+    padding: 0px;
+}
+
+.topright>h4>a {
+    text-decoration: none;
+    font-size: 11pt;
+    font-weight: 500;
+    color: rgb(50,50,50);
+    padding: 20px;
+}
+.cart {
+    position: relative;
+    top: 15px;
+    right: 30px;
+    border-left: 1px solid rgb(241,241,241)
+}
+.discover {
+    position: relative;
+    top: 15px;
+    border-left: 1px solid rgb(241,241,241)
+}
+#shopicon {
+    position: relative;
+    top: 10px;
+    right: 80px;
+}
+#discovericon {
+    position: relative;
+    top: 10px;
+    right: 60px;
+}
+.signin {
+
+    border: 1px solid rgb(50,50,50);
+    border-radius: 5%;
+}
+.categories{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid rgb(226,226,226);
+}
+.categories>p>a {
+    text-decoration: none;
+    color: rgb(50,50,50);
+    font-weight: 150;
+    font-size: 11pt;
+}
+#lilgift {
+    font-size: 15px;
+    z-index: 1;
+}
+.whiskeys {
+    display: flex;
+    flex-direction: row;
+    padding: 7px;
+}
+.whiskeys>p {
+    background-color: rgb(255,172,98);
+    padding: 13px 18px;
+    margin-left: 5px;
+    margin-top: 10px;
+    border-radius: 5%;
+    font-weight: 150;
+}
+p.yellow {
+    background-color: rgb(254,207,132);
+}
+p.beer {
+    background-color: rgb(255,172,143);
+}
+
+header {
+    height: 200px;
+    width: 100%;
+}
+
+section main {
+    display: flex;
+    flex-direction: row;
+}
+main p {
+    font-size: 12px;
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+.aboveitems {
+    width: 1115px;
+    margin-left: 270px;
+    margin-top: 20px;
+    display: flex;
+    font-weight: 150;
+    font-size: 10pt;
+}
+.sortby {
+    margin-left: 795px;
+}
+
+main {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+main img {
+    width: 245px;
+    height: 230px;
+    z-index: -1;
+}
+main .item {
+    margin: 10px;
+    margin-top: 10px;
+    font-family: 'Nanum Gothic', sans-serif;
+    line-height: .6cm;
+}
+.item {
+    padding: 5px;
+}
+.item:hover {
+    background: url(./assets/heart.png) top right;
+    float: top right;
+    background-repeat: no-repeat; 
+    position: relative;
+    z-index: 1;
+    opacity: 1;
+    
+}
+.title {
+    font-size: 15px;
+    font-weight: 270;
+    width: 240px;
+}
+
+.seller {
+    font-size: 12px;
+    color: rgb(89, 89, 89)
+}
+
+.price {
+    font-size: 18px;
+    font-weight: 800;
+}
+
+
+section {
+    display: flex;
+    flex-direction: row;
+}
+
+aside {
+    width: 1550px;
+    min-height: 500px;
+    font-size: 10pt;
+}
+input[type='radio'] , input[type='checkbox'] {
+    transform: scale(2);
+}
+
+aside>input[type='text'] {
+    text-align: center;
+    width: 200px;
+    height: 35px;
+    border: 2px solid grey;
+    border-radius: 5%;
+}
+.locationbox {
+    height: 35px;
+    width: 150px;
+    border-radius: 8%;
+    border: 2px solid rgb(222,222,222);
+    justify-content: center;
+    background: rgb(255,255,255);
+    margin-top: 5px;
+}
+.locationbox::placeholder{
+    font-size: 13px;
+    padding-left: 5px;
+
+}
+.money {
+    display: flex;  
+}
+.customprice {
+    height: 35px;
+    width: 75px;
+    border-radius: 5%;
+    border: 2px solid rgb(222,222,222);
+    background: rgb(255,255,255);
+    justify-content: center;
+}
+.customprice::placeholder {
+    font-size: 13px;
+    padding-left: 5px;
+}
+.shipbar {
+    height: 35px;
+    width: 200px;
+    border-radius: 5%;
+    border: 2px solid rgb(222,222,222);
+    background: rgb(255,255,255);
+    justify-content: center;
+}
+.shipto>select {
+    font-size: 13px;
+    padding-left: 5px;
+    color: rgb(88,88,88)
+}
+aside>div>h3, a.sub {
+    font-weight: 540;
+    color: rgb(43,43,43);
+    text-decoration: none;
+}
+aside>div>ul>li , aside>div>ul>li>a {
+    font-weight: 120;
+    padding: 3px;
+    text-decoration: none;
+    color: black;
+}
+aside>div>ul {
+    margin: 0;
+    padding: 0;
+}
+.cate>ul>li {
+    margin-left: 1cm;
+}
+main {
+    flex-wrap: wrap;
+}
+#subby {
+    border-top: 5px solid rgb(226,226,226); 
+    margin-top: 60px;
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+}
+.trends {
+    text-align: center;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 14pt;
+    color: rgb(50,50,50); 
+}
+#email {
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.emailbox {
+    height: 50px;
+    width: 430px;
+    border-radius: 5%;
+    border: 2px solid rgb(222,222,222);
+
+}
+.emailbox::placeholder {
+    font-size: 13pt;
+    padding-left: 6px;
+}
+.subbutton {
+    background: black;
+    color: white;
+    width: 100px;
+    height: 50px;
+    padding: 5px;
+    font-size: 13pt;
+    border-radius: 5%;
+}
+.bottomlinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    margin-top: 300px;
+}
+.row1 , .row2 , .row3, .row4 {
+    flex-direction: column;
+    line-height: .9cm;
+}
+.row1 {
+    padding-left: 80px;
+}
+.row4 {
+    padding-right: 160px;
+}
+.bottomlinks > ul{
+    padding: 0;
+    margin: 0;
+}
+.lilsocial {
+    display: inline-flex;
+    padding-top: 15px;
+}
+#icons {
+    font-size: 22pt;
+    padding: 3px;
+}
+.download {
+    border: 1px solid white;
+    border-radius: 5%;
+    padding: 2px 4px;
+    margin-top: 3px;
+}
+footer {
+    background-image: url(https://www.completesleeprrr.co.uk/img/Footer.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 500px;
+    padding-bottom: 100px;
+}

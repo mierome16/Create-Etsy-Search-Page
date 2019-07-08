@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/118c0dc5a0.js"></script>
+
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <div class="topleft">
+                <h1 class="logo">Etsy</h1>
+                <span class="search">
+                    <i id="searchicon" class="fas fa-search"></i>
+                    <i id="searchex" class="fas fa-times"></i>
+                    <input class="searchbar" type="text" placeholder="whiskey">
+                </span>
+            </div>
+            <div class="topright">
+                <h4><a class="navsell" href="#">Sell on Etsy</a></h4>
+                <h4><a class="register" href="#">Register</a></h4>
+                <h4><a class="signin" href="#">Sign in</a></h4>
+                <h4><a class="discover" href="#">Discover</a></h4>
+                <img id="discovericon" height="25px" width="25px" src="./assets/hamburger.png">
+                <h4><a class="cart" href="#">Cart</a></h4>
+                <img id="shopicon" height="25px" width="25px" src="./assets/cart.png">
+            </div>
+            <div class="categories">
+                <p><a href="#">Jewelery & Accessories</a></p>
+                <p><a href="#">Clothing & Shoes</a></p>
+                <p><a href="#">Home & Living</a></p>
+                <p><a href="#">Wedding & Party</a></p>
+                <p><a href="#">Toys & Entertainment</a></p>
+                <p><a href="#">Art & Collectibles</a></p>
+                <p><a href="#">Craft Supplies</a></p>
+                <p><a href="#">Vintage</a></p>
+                <p><a href="#"><i id="lilgift" class="fas fa-gift"></i> Gifts</a></p>
+            </div>
+            <div class="whiskeys">
+                <p>whiskey danter</p>
+                <p>whiskey stones</p>
+                <p>whiskey glasses</p>
+                <p>whiskey barrel</p>
+                <p>bourbon</p>
+                <p>scotch</p>
+                <p class="yellow">whiskey gift</p>
+                <p class="yellow">whiskey print</p>
+                <p class="yellow">whiskey sign</p>
+                <p class="beer">beer</p>
+
+            </div>
+            <div class="aboveitems">
+                    <p>All categories <i class="fas fa-chevron-right"></i> <strong>"whiskey"</strong> (68,204 results)</p>
+                    <p class="sortby">Sort by <i class="fas fa-chevron-down"></i></p>
+                </div>
+        </header>
+        <section>
+            <aside>
+                <div class="cate">
+                    <h3><a href="#" class="sub">All categories</a></h3>
+                    <ul>
+                        <li><a href="#">Home & Living</a></li>
+                        <li><a href="#">Art & Collectibles</a></li>
+                        <li><a href="#">Weddings</a></li>
+                        <li><a href="#">Clothing</a></li>
+                    </ul>
+                    <h3>+ Show more</h3>
+                </div>
+                <div class="special">
+                    <h3>Special offers</h3>
+                    <ul class="checknext">
+
+                        <li> <input type="checkbox" name="shipping"><label class="shipping" for="shipping"> FREE
+                                shipping</label>
+                        </li>
+
+                        <li> <input type="checkbox" name="sale"> <label class="onsale" for="sale"> On sale</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="shipin">
+                    <h3>Ready to ship in</h3>
+                    <ul class="shiptime">
+                        <li> <input type="checkbox" name="shipping"><label class="oneday" for="shipping"> 1 business
+                                day</label>
+                        </li>
+                        <li> <input type="checkbox" name="shipping"><label class="threeday" for="shipping"> 1 - 3
+                                business days</label> </li>
+
+                    </ul>
+                </div>
+                <div class="location">
+                    <h3>Shop location</h3>
+                    <ul class="shoploc">
+                        <li> <input type="radio" name="anywhere"><label for="anywhere"> Anywhere</label>
+                        </li>
+                        <li> <input type="radio" name="USA"><label for="USA"> United States</label>
+                        </li>
+                        <li><input type="radio" name="custom"> <label for="custom"> Custom</label>
+                        </li>
+                        <li> <input class="locationbox" type="text" placeholder="Enter location"> </li>
+                    </ul>
+                </div>
+                <div class="itemtype">
+                    <h3>Item type</h3>
+                    <ul>
+                        <li><input type="radio" name="All"><label for="all items"> All items</label></li>
+                        <li><input type="radio" name="handmade"><label for="handmade"> Handmade</label></li>
+                        <li><input type="radio" name="vintage"><label for="vintage"> Vintage</label></li>
+                    </ul>
+                </div>
+                <div class="sideprice">
+                    <h3>Price ($)</h3>
+                    <ul>
+                        <li><input type="radio"><label for="any"> Any price</label></li>
+                        <li><input type="radio"><label for="25"> Under $25</label></li>
+                        <li><input type="radio"><label for="50"> $25 to $50</label></li>
+                        <li><input type="radio"><label for="100"> $50 to $100</label></li>
+                        <li><input type="radio"><label for="more100"> Over $100</label></li>
+                        <li><input type="radio"><label for="custom"> Custom</label></li>
+                        <span class="money">
+                            <ul>
+                                <li class="allprice"><input class="customprice" type="text" placeholder="Low">to<input
+                                        class="customprice" type="text" placeholder="High"></li>
+                            </ul>
+                        </span>
+                    </ul>
+                </div>
+                <div class="sidecolor">
+                    <h3>Color</h3>
+                    <ul>
+                        <li><input type="checkbox"> Clear</li>
+                        <li><input type="checkbox"> Black</li>
+                        <li><input type="checkbox"> White</li>
+                        <li><input type="checkbox"> Brown</li>
+                        <li><input type="checkbox"> Blue</li>
+                    </ul>
+                    <h3>+ Show more</h3>
+                </div>
+                <div class="orderoptions">
+                    <h3>Ordering options</h3>
+                    <ul>
+                        <li><input type="checkbox"> Accepts Etsy gift cards</li>
+                        <li><input type="checkbox"> Customizable</li>
+                        <li><input type="checkbox"> Can be gift-wrapped</li>
+                    </ul>
+                </div>
+                <div class="shipto">
+                    <h3>Ship to</h3>
+                    <select class="shipbar">
+                        <option class="usa">United States</option>
+                    </select>
+                </div>
+            </aside>
+            
+            <main id="etsythings">
+                <div class="item">
+                    <img src="http://placehold.it/300x275">
+                    <p class="title">PRINTED custom cognac label, custom valentines liquor label, groomsman gift,
+                        groomsmen proposal, boyfriend valentine gift, father&#39;s day gift</p>
+                    <p class="seller">CulturePopShop</p>
+                    <p class="price">3.95</p>
+                </div>
+    </div>
+    </main>
+    </section>
+    <footer>
+        <div id="subby">
+            <p class="trends">Get fresh Etsy trends and unique gift ideas delivered right to your inbox.</p>
+            <ul id="email">
+                <li><input class="emailbox" type="email" placeholder="Enter your email"></li>
+                <button class="subbutton">Subscribe</button>
+            </ul>
+        </div>
+
+        <div class="bottomlinks">
+            <div class="row1">
+                <ul>
+                    <li>
+                        <h4>Shop</h4>
+                    </li>
+                    <li>Gift Cards</li>
+                    <li>Etsy blog</li>
+                </ul>
+            </div>
+            <div class="row2">
+                <ul>
+                    <li>
+                        <h4>Sell</h4>
+                    </li>
+                    <li>Sell on Etsy</li>
+                    <li>Teams</li>
+                    <li>Forums</li>
+                    <li>Affiliates</li>
+                </ul>
+            </div>
+            <div class="row3">
+                <ul>
+                    <li>
+                        <h4>About</h4>
+                    </li>
+                    <li>Etsy Inc.</li>
+                    <li>Policies</li>
+                    <li>Investors</li>
+                    <li>Careers</li>
+                    <li>Press</li>
+                    <li>Impact</li>
+                </ul>
+            </div>
+            <div class="row4">
+                <ul>
+                    <li>
+                        <h4>Help</h4>
+                    </li>
+                    <li>Help Center</li>
+                    <li class="download">Download the Etsy app</li>
+                    <li class="lilsocial">
+                        <i id="icons" class="fab fa-facebook-square"></i>
+                        <i id="icons" class="fas fa-rss-square"></i>
+                        <i id="icons" class="fab fa-twitter-square"></i>
+                        <i id="icons" class="fab fa-youtube-square"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+
+
+    </div>
+    <script src="items.js"></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
